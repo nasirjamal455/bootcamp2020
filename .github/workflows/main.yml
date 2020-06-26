@@ -7,7 +7,7 @@ name: Bootcamp2020
 on:
   push:
     branches: [ master ]
- ]
+ 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,7 +28,7 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: installing surge
       run: npm install --global surge
-    -name: deploying using surge
-     run: surge ./ nasir_455.surge.sh --token $ {{secret.secret_token}}
+    - name: deploying using surge
+      run: surge ./ nasir_455.surge.sh --token ${{secret.secret_token}}
         echo Add other actions to build,
         echo test, and deploy your project.
