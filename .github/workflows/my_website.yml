@@ -31,5 +31,5 @@ jobs:
     - name: installing surge
       run:  npm install --global surge
     - name: deploy using surges
-      run: surge ./ nasir_455.surge.sh --token $ {{secrets.secret_token}}
+      run: surge ./ nasir_455.surge.sh --token $ {{Secrets.SECRET_KEY}}
        
