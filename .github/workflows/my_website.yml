@@ -29,6 +29,6 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: deploy uding surges
-      run: surge ./ nasir_455.surge.sh --token ${{}}
+      run: surge ./ nasir_455.surge.sh --token ${{secrets.secret_token}}
         echo Add other actions to build,
         echo test, and deploy your project.
